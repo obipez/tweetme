@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+
+{%block content%}
+<div class="row">
+	<div class="">
+	{% include "tweets/form.html" with form=form btn_title="Tweet" %}
+	</div>
+</div>
+{%endblock%}
+
+<!-- col-sm-4 offset-sm-4 -->

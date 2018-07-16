@@ -1,0 +1,4 @@
+<form class="form-inline my-2 my-lg-0" method='GET' action='{% url "tweet:list" %}'>
+	<input class="form-control mr-sm-2" type="search" placeholder="Search..." name="query" value="{{requests.GET.query}}">
+	<input class="btn btn-outline-success my-2 my-lg-0" type="submit" value="Search" name="submit">
+</form>

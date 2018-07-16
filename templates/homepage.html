@@ -1,0 +1,8 @@
+{% extends "base.html"%}
+{% include "navbar.html" %}
+
+{%block content%}
+<br>
+<h1 class="text-center">Welcome to the Twitterverse, mate!</h1>
+<div class="text-center"><a class="btn btn-primary" href="{%url 'tweet:list' %}"> Click here to read tweets!</a></div> 
+{%endblock%}

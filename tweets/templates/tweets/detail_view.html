@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<div class="row">
+	<div class="col-sm-8 offset-sm-2">
+		<div class="media">
+  			{% if object.image %}
+  				<img class="align-self-start mr-3" src="http://via.placeholder.com/64x64" alt="Generic placeholder image">
+  			{% endif %}
+  			<div class="media-body">
+    			<h5 class="mt-0">{{object.user}}</h5>
+				<p>{{object.content}}</p>
+				<p align="right"><small>{{object.created}}</small></p>
+				<hr>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
